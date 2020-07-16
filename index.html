@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>飞机大战</title>
+	</head>
+	<style type="text/css">
+		body{
+			background-color: #000000;
+		}
+		.box{
+			position: relative;
+			margin: 15px auto;
+			border: 3px solid #FFFFFF;
+			width: 300px;
+			height: 400px;
+			/* overflow: hidden; */
+		}
+		.boxFlex{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.box a{
+			width: 100px;
+			height: 30px;
+			background-color: #FFF;
+			align-self: center;
+			text-align: center;
+			line-height: 30px;
+			margin: 10px 0;
+			font-size: 14px;
+			color: #000000;
+			text-decoration: none;
+		}
+		.box a:hover{
+			background-color: orange;
+		}
+		.box h3 {
+			text-align: center;
+			background-color: black;
+			line-height: 30px;
+			color: #FFF;
+
+		}
+		.box a:last-child{
+			color: red;
+		}
+		.aaaa{
+			position: absolute;
+
+		}
+		.button{
+			display: block;
+				width: 170px;
+				height: 40px;
+				border-width: 0px;
+				border-radius: 3px;
+				background: #1E90FF;
+				cursor: pointer;
+				font-family: Microsoft YaHei;
+				color: white;
+				font-size: 17px;
+				line-height: 40px;
+				margin: 0 auto;
+			}
+			.button:hover{
+				background: #5599FF;
+			}
+	</style>
+	<body>
+		<div class="box boxFlex">
+		</div>
+		<button type="button">啊啊啊啊啊！你不要过来啊</button>
+		<script src="./Game.js"></script>
+		<script>
+			var button = document.querySelector('button');
+			button.onclick = function (){
+				debugger;
+			}
+			window.onload = function (){
+
+				game.init();
+			}
+
+
+		</script>
+
+	</body>
+</html>
